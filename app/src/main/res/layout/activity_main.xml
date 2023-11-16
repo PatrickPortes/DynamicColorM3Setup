@@ -6,28 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btBack"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="30dp"
-        android:text="BACK"
-        app:layout_constraintEnd_toEndOf="@+id/tvAppInfo"
-        app:layout_constraintStart_toStartOf="@+id/tvAppInfo"
-        app:layout_constraintTop_toBottomOf="@+id/tvAppInfo" />
-
-    <TextView
-        android:id="@+id/tvResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Your App Theme:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btBack" />
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
@@ -36,50 +14,37 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="@string/app_name" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ivNight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvChoice"
+        app:layout_constraintStart_toEndOf="@+id/tvChoice"
+        app:layout_constraintTop_toTopOf="@+id/tvChoice"
         app:srcCompat="@drawable/baseline_brightness_3_24" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/ivDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvChoice"
+        app:layout_constraintEnd_toStartOf="@+id/tvChoice"
+        app:layout_constraintTop_toTopOf="@+id/tvChoice"
         app:srcCompat="@drawable/baseline_wb_sunny_24" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btBack"
-        app:layout_constraintEnd_toStartOf="@+id/btBack"
-        app:layout_constraintTop_toTopOf="@+id/btBack"
-        app:layout_constraintVertical_bias="0.458"
-        app:srcCompat="@drawable/baseline_restart_alt_24" />
 
     <TextView
         android:id="@+id/tvChoice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="32dp"
         android:text="Choose Between Day or Night Theme:"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
@@ -87,13 +52,73 @@
         android:id="@+id/tvAppInfo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
         android:padding="4dp"
         android:text="Text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvChoice" />
+
+    <Button
+        android:id="@+id/btBlue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Blue Theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppInfo" />
+
+    <Button
+        android:id="@+id/btRed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Red Theme"
+        app:layout_constraintEnd_toEndOf="@+id/btDefault"
+        app:layout_constraintStart_toStartOf="@+id/btDefault"
+        app:layout_constraintTop_toBottomOf="@+id/btDefault" />
+
+    <Button
+        android:id="@+id/btPurple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Purple Theme"
+        app:layout_constraintEnd_toEndOf="@+id/btGreen"
+        app:layout_constraintStart_toStartOf="@+id/btGreen"
+        app:layout_constraintTop_toBottomOf="@+id/btGreen" />
+
+    <Button
+        android:id="@+id/btYellow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Yellow Theme"
+        app:layout_constraintEnd_toEndOf="@+id/btRed"
+        app:layout_constraintStart_toStartOf="@+id/btRed"
+        app:layout_constraintTop_toBottomOf="@+id/btRed" />
+
+    <Button
+        android:id="@+id/btGreen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Green Theme"
+        app:layout_constraintEnd_toEndOf="@+id/btBlue"
+        app:layout_constraintStart_toStartOf="@+id/btBlue"
+        app:layout_constraintTop_toBottomOf="@+id/btBlue" />
+
+    <Button
+        android:id="@+id/btDefault"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Default Theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppInfo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
