@@ -29,35 +29,35 @@
         <item name="colorPrimaryInverse">@color/md_theme_dark_inversePrimary</item>
     </style>
 
-    <style name="DynamicColor.Overlay_Red_Dark" parent="ThemeOverlay.Material3.DynamicColors.Dark">
+    <style name="AppTheme.Overlay_Red_Dark" parent="ThemeOverlay.Material3.DynamicColors.Dark">
         <item name="colorPrimary">#ffb4aa</item>
         <item name="colorOnPrimary">#690004</item>
         <item name="colorPrimaryContainer">#93020a</item>
         <item name="colorOnPrimaryContainer">#ffdad5</item>
     </style>
 
-    <style name="DynamicColor.Overlay_Blue_Dark" parent="ThemeOverlay.Material3.DynamicColors.Dark">
+    <style name="AppTheme.Overlay_Blue_Dark" parent="ThemeOverlay.Material3.DynamicColors.Dark">
         <item name="colorPrimary">#b9c3ff</item>
         <item name="colorOnPrimary">#002389</item>
         <item name="colorPrimaryContainer">#0034c0</item>
         <item name="colorOnPrimaryContainer">#dde1ff</item>
     </style>
 
-    <style name="DynamicColor.Overlay_Green_Dark" parent="ThemeOverlay.Material3.DynamicColors.Dark">
+    <style name="AppTheme.Overlay_Green_Dark" parent="ThemeOverlay.Material3.DynamicColors.Dark">
         <item name="colorPrimary">#6bde77</item>
         <item name="colorOnPrimary">#00390f</item>
         <item name="colorPrimaryContainer">#00531a</item>
         <item name="colorOnPrimaryContainer">#87fb91</item>
     </style>
 
-    <style name="DynamicColor.Overlay_Yellow_Dark" parent="ThemeOverlay.Material3.DynamicColors.Dark">
+    <style name="AppTheme.Overlay_Yellow_Dark" parent="ThemeOverlay.Material3.DynamicColors.Dark">
         <item name="colorPrimary">#f9bd23</item>
         <item name="colorOnPrimary">#402d00</item>
         <item name="colorPrimaryContainer">#5c4300</item>
         <item name="colorOnPrimaryContainer">#ffdea0</item>
     </style>
 
-    <style name="DynamicColor.Overlay_Purple_Dark" parent="ThemeOverlay.Material3.DynamicColors.Dark">
+    <style name="AppTheme.Overlay_Purple_Dark" parent="ThemeOverlay.Material3.DynamicColors.Dark">
         <item name="colorPrimary">#ebb2ff</item>
         <item name="colorOnPrimary">#520072</item>
         <item name="colorPrimaryContainer">#7400a0</item>

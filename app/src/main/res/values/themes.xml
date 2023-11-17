@@ -29,35 +29,35 @@
         <item name="colorPrimaryInverse">@color/md_theme_light_inversePrimary</item>
     </style>
 
-    <style name="DynamicColor.Overlay_Red_Light" parent="ThemeOverlay.Material3.DynamicColors.Light">
+    <style name="AppTheme.Overlay_Red_Light" parent="ThemeOverlay.Material3.DynamicColors.Light">
         <item name="colorPrimary">#bf0031</item>
         <item name="colorOnPrimary">#ffffff</item>
         <item name="colorPrimaryContainer">#ffdad5</item>
         <item name="colorOnPrimaryContainer">#410002</item>
     </style>
 
-    <style name="DynamicColor.Overlay_Blue_Light" parent="ThemeOverlay.Material3.DynamicColors.Light">
+    <style name="AppTheme.Overlay_Blue_Light" parent="ThemeOverlay.Material3.DynamicColors.Light">
         <item name="colorPrimary">#194aee</item>
         <item name="colorOnPrimary">#ffffff</item>
         <item name="colorPrimaryContainer">#dde1ff</item>
         <item name="colorOnPrimaryContainer">#001257</item>
     </style>
 
-    <style name="DynamicColor.Overlay_Green_Light" parent="ThemeOverlay.Material3.DynamicColors.Light">
+    <style name="AppTheme.Overlay_Green_Light" parent="ThemeOverlay.Material3.DynamicColors.Light">
         <item name="colorPrimary">#006e25</item>
         <item name="colorOnPrimary">#ffffff</item>
         <item name="colorPrimaryContainer">#87fb91</item>
         <item name="colorOnPrimaryContainer">#002106</item>
     </style>
 
-    <style name="DynamicColor.Overlay_Yellow_Light" parent="ThemeOverlay.Material3.DynamicColors.Light">
+    <style name="AppTheme.Overlay_Yellow_Light" parent="ThemeOverlay.Material3.DynamicColors.Light">
         <item name="colorPrimary">#795900</item>
         <item name="colorOnPrimary">#ffffff</item>
         <item name="colorPrimaryContainer">#ffdea0</item>
         <item name="colorOnPrimaryContainer">#261900</item>
     </style>
 
-    <style name="DynamicColor.Overlay_Purple_Light" parent="ThemeOverlay.Material3.DynamicColors.Light">
+    <style name="AppTheme.Overlay_Purple_Light" parent="ThemeOverlay.Material3.DynamicColors.Light">
         <item name="colorPrimary">#941fc5</item>
         <item name="colorOnPrimary">#ffffff</item>
         <item name="colorPrimaryContainer">#f8d8ff</item>

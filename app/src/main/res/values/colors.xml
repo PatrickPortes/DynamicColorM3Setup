@@ -66,4 +66,8 @@
     <color name="Green">#008D32</color>
     <color name="Blue">#355EFF</color>
     <color name="Purple">#8600B8</color>
+    <color name="White">#FFFFFF</color>
+    <color name="daySky">#BAFDFF</color>
+    <color name="nightSky">#050C6B</color>
+    <color name="lightGrey">#999999</color>
 </resources>
