@@ -47,19 +47,21 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        //TODO:
-//        when (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
-//            Configuration.UI_MODE_NIGHT_NO -> {
-//                // Light Mode:
-//                Toast.makeText(this, "Switch Desativado: Day Mode", Toast.LENGTH_SHORT).show()
-//            }
-//
-//            Configuration.UI_MODE_NIGHT_YES -> {
-//                // Modo escuro
-//                Toast.makeText(this, "Switch Ativado: Night Mode", Toast.LENGTH_SHORT).show()
-//
-//            }
-//        }
+        when (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
+            Configuration.UI_MODE_NIGHT_NO -> {
+                // Light Mode:
+                //Toast.makeText(this, "Switch Desativado: Day Mode", Toast.LENGTH_SHORT).show()
+                sharedPreferences = getSharedPreferences("MODE", Context.MODE_PRIVATE)
+                nightMode = sharedPreferences.getBoolean("nightMode", false)
+            }
+
+            Configuration.UI_MODE_NIGHT_YES -> {
+                // Dark Mode:
+                //Toast.makeText(this, "Switch Ativado: Night Mode", Toast.LENGTH_SHORT).show()
+                sharedPreferences = getSharedPreferences("MODE", Context.MODE_PRIVATE)
+                nightMode = sharedPreferences.getBoolean("nightMode", true)
+            }
+        }
 
         //viewBinding:
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -76,15 +78,14 @@ class MainActivity : AppCompatActivity() {
         tvAppInfo.text =
             " Dynamic Color, which was added in Android 12, enables users to personalize their devices to align tonally with the color scheme of their personal wallpaper or through a selected color in the wallpaper picker."
 
-
-        //SharedPreferences
-        sharedPreferences = getSharedPreferences("MODE", Context.MODE_PRIVATE)
-        nightMode = sharedPreferences.getBoolean("nightMode", true)
-
         if (nightMode) {
             switchMode.isChecked = true
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             switchMode.text = "NightTheme"
+        }else{
+            switchMode.isChecked = false
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            switchMode.text = "DayTheme"
         }
 
         var editor: SharedPreferences.Editor
@@ -106,7 +107,6 @@ class MainActivity : AppCompatActivity() {
             }
             editor.apply()
         }
-
 
         btRedTheme.setOnClickListener { redTheme() }
         btBlueTheme.setOnClickListener { blueTheme() }
@@ -157,7 +157,6 @@ class MainActivity : AppCompatActivity() {
         btGreenTheme = binding.btGreen
         btBlueTheme = binding.btBlue
 
-        //Testing
         switchMode = binding.switch1
     }
 }
